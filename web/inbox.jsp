@@ -1,9 +1,11 @@
-<!--Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE HTML>
+<%-- 
+    Document   : inbox
+    Created on : Jul 29, 2018, 8:38:47 PM
+    Author     : Amal
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
 <title>Shoppy an Admin Panel Category Flat Bootstrap Responsive Website Template | Inbox :: w3layouts</title>
@@ -1923,3 +1925,4 @@ $(".sidebar-icon").click(function() {
 
                       
 						
+

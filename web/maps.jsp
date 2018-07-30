@@ -1,12 +1,14 @@
-<!--Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE HTML>
+<%-- 
+    Document   : maps
+    Created on : Jul 29, 2018, 8:40:40 PM
+    Author     : Amal
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Shoppy an Admin Panel Category Flat Bootstrap Responsive Website Template | Icons :: w3layouts</title>
+<title>Shoppy an Admin Panel Category Flat Bootstrap Responsive Website Template | Maps :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -23,7 +25,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--Google Fonts-->
 <link href='//fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Work+Sans:400,500,600' rel='stylesheet' type='text/css'>
-<!--//skycons-icons-->
+<!--mapcss-->
+ <link rel="stylesheet" type="text/css" href="css/examples.css" />
+<!--js-->
+<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="js/gmaps.js"></script>
+<!--map-->
 </head>
 <body>	
 <div class="page-container">	
@@ -228,69 +235,178 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!-- /script-for sticky-nav -->
 <!--inner block start here-->
 <div class="inner-block">
-   <div class="boost-icons">
-   	       <div class="boost-icons-head">
-				 <h2>Icons </h2>
+<!--market updates updates-->
+	<div class="map-main-page">  	
+    	<h2>Maps</h2>
+    	    <div class="map-grid">
+			  <div class="map-system">
+		 		<div class="col-md-6 map-1">
+			    <div class="span11">
+			      <div id="map3"></div>
+			    </div>
+			
+				</div>
+				 <script type="text/javascript">
+			    var map;
+			    $(document).ready(function(){
+			      map = new GMaps({
+			        el: '#map3',
+			        lat: -12.043333,
+			        lng: -77.028333,
+			        mapTypeControlOptions: {
+			          mapTypeIds : ["hybrid", "roadmap", "satellite", "terrain", "osm", "cloudmade"]
+			        }
+			      });
+			      map.addMapType("osm", {
+			        getTileUrl: function(coord, zoom) {
+			          return "http://tile.openstreetmap.org/" + zoom + "/" + coord.x + "/" + coord.y + ".png";
+			        },
+			        tileSize: new google.maps.Size(256, 256),
+			        name: "OpenStreetMap",
+			        maxZoom: 18
+			      });
+			      map.addMapType("cloudmade", {
+			        getTileUrl: function(coord, zoom) {
+			          return "http://b.tile.cloudmade.com/8ee2a50541944fb9bcedded5165f09d9/1/256/" + zoom + "/" + coord.x + "/" + coord.y + ".png";
+			        },
+			        tileSize: new google.maps.Size(256, 256),
+			        name: "CloudMade",
+			        maxZoom: 18
+			      });
+			      map.setMapTypeId("osm");
+			    });
+			  </script>
+			  	<div class="col-md-6 map-2">
+					
+			     <div class="span11">
+			      <div id="map"></div>
+			    </div>
+				   <script type="text/javascript">
+			    var map;
+			
+			    var getTile = function(coord, zoom, ownerDocument) {
+			      var div = ownerDocument.createElement('div');
+			      div.innerHTML = coord;
+			      div.style.width = this.tileSize.width + 'px';
+			      div.style.height = this.tileSize.height + 'px';
+			      div.style.background = 'rgba(250, 250, 250, 0.55)';
+			      div.style.fontFamily = 'Monaco, Andale Mono, Courier New, monospace';
+			      div.style.fontSize = '10';
+			      div.style.fontWeight = 'bolder';
+			      div.style.border = 'dotted 1px #aaa';
+			      div.style.textAlign = 'center';
+			      div.style.lineHeight = this.tileSize.height + 'px';
+			      return div;
+			    };
+			
+			    $(document).ready(function(){
+			      map = new GMaps({
+			        el: '#map',
+			        lat: -12.043333,
+			        lng: -77.028333
+			      });
+			      map.addOverlayMapType({
+			        index: 0,
+			        tileSize: new google.maps.Size(256, 256),
+			        getTile: getTile
+			      });
+			    });
+			   </script>
+					</div>
+			 		<div class="clearfix"> </div>
+			 		
+				</div>
+		 <div class="map-system">
+	 		<div class="col-md-6 map-1">
+	    <div class="span11">
+	      <div id="map2"></div>
+		</div>
+		 <script type="text/javascript">
+	    var map;
+	    $(document).ready(function(){
+	      map = new GMaps({
+	        el: '#map2',
+	        lat: -12.043333,
+	        lng: -77.028333,
+	        zoomControl : true,
+	        zoomControlOpt: {
+	            style : 'SMALL',
+	            position: 'TOP_LEFT'
+	        },
+	        panControl : false,
+	        streetViewControl : false,
+	        mapTypeControl: false,
+	        overviewMapControl: false
+	      });
+	    });
+	  </script>
+	 		</div>
+	 		<div class="col-md-6 map-2">
+			
+	      <div class="span11">
+	        <div id="map1"></div>
+	      
 		  </div>
-		  <div class="boost-icons-bottom">
-				<div class="boost-icons-list">
-					<ul>
-						<li><i class="glyphicon glyphicon-home" aria-hidden="true"></i> glyphicon-home</li>
-						<li><i class="glyphicon glyphicon-asterisk" aria-hidden="true"></i> glyphicon-asterisk</li>
-						<li><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> glyphicon-plus</li>
-						<li><i class="glyphicon glyphicon-euro" aria-hidden="true"></i> glyphicon-euro</li>
-						<li><i class="glyphicon glyphicon-eur" aria-hidden="true"></i> glyphicon-eur</li>
-						<li><i class="glyphicon glyphicon-minus" aria-hidden="true"></i> glyphicon-minus</li>
-						<li><i class="glyphicon glyphicon-cloud" aria-hidden="true"></i> glyphicon-cloud</li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> glyphicon-envelope</li>
-						<li><i class="glyphicon glyphicon-pencil" aria-hidden="true"></i> glyphicon-pencil</li>
-						<li><i class="glyphicon glyphicon-glass" aria-hidden="true"></i> glyphicon-glass</li>
-						<li><i class="glyphicon glyphicon-music" aria-hidden="true"></i> glyphicon-music</li>
-						<li><i class="glyphicon glyphicon-search" aria-hidden="true"></i> glyphicon-search</li>
-						<li><i class="glyphicon glyphicon-heart" aria-hidden="true"></i> glyphicon-heart</li>
-						<li><i class="glyphicon glyphicon-star" aria-hidden="true"></i> glyphicon-star</li>
-						<li><i class="glyphicon glyphicon-star-empty" aria-hidden="true"></i> glyphicon-star-empty</li>
-						<li><i class="glyphicon glyphicon-film" aria-hidden="true"></i> glyphicon-film</li>
-						<li><i class="glyphicon glyphicon-th-large" aria-hidden="true"></i> glyphicon-th-large</li>
-						<li><i class="glyphicon glyphicon-th-list" aria-hidden="true"></i> glyphicon-th-list</li>
-						<li><i class="glyphicon glyphicon-ok" aria-hidden="true"></i> glyphicon-ok</li>
-						<li><i class="glyphicon glyphicon-remove" aria-hidden="true"></i> glyphicon-remove</li>
-						<li><i class="glyphicon glyphicon-zoom-in" aria-hidden="true"></i> glyphicon-zoom-in</li>
-						<li><i class="glyphicon glyphicon-zoom-out" aria-hidden="true"></i> glyphicon-zoom-out</li>
-						<li><i class="glyphicon glyphicon-off" aria-hidden="true"></i> glyphicon-off</li>
-						<li><i class="glyphicon glyphicon-signal" aria-hidden="true"></i> glyphicon-signal</li>
-						<li><i class="glyphicon glyphicon-cog" aria-hidden="true"></i> glyphicon-cog</li>
-						<li><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> glyphicon-trash</li>
-						<li><i class="glyphicon glyphicon-file" aria-hidden="true"></i> glyphicon-file</li>
-						<li><i class="glyphicon glyphicon-road" aria-hidden="true"></i> glyphicon-road</li>
-						<li><i class="glyphicon glyphicon-download-alt" aria-hidden="true"></i> glyphicon-download-alt</li>
-						<li><i class="glyphicon glyphicon-download" aria-hidden="true"></i> glyphicon-download</li>
-						<li><i class="glyphicon glyphicon-upload" aria-hidden="true"></i> glyphicon-upload</li>
-						<li><i class="glyphicon glyphicon-inbox" aria-hidden="true"></i> glyphicon-inbox</li>
-						<li><i class="glyphicon glyphicon-play-circle" aria-hidden="true"></i> glyphicon-play-circle</li>
-						<li><i class="glyphicon glyphicon-repeat" aria-hidden="true"></i> glyphicon-repeat</li>
-						<li><i class="glyphicon glyphicon-refresh" aria-hidden="true"></i> glyphicon-refresh</li>
-						<li><i class="glyphicon glyphicon-list-alt" aria-hidden="true"></i> glyphicon-list-alt</li>
-						<li><i class="glyphicon glyphicon-lock" aria-hidden="true"></i> glyphicon-lock</li>
-						<li><i class="glyphicon glyphicon-flag" aria-hidden="true"></i> glyphicon-flag</li>
-						<li><i class="glyphicon glyphicon-headphones" aria-hidden="true"></i> glyphicon-headphones</li>
-						<li><i class="glyphicon glyphicon-volume-off" aria-hidden="true"></i> glyphicon-volume-off</li>
-						<li><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> glyphicon-trash</li>
-						<li><i class="glyphicon glyphicon-file" aria-hidden="true"></i> glyphicon-file</li>
-						<li><i class="glyphicon glyphicon-road" aria-hidden="true"></i> glyphicon-road</li>
-						<li><i class="glyphicon glyphicon-download-alt" aria-hidden="true"></i> glyphicon-download-alt</li>
-						<li><i class="glyphicon glyphicon-download" aria-hidden="true"></i> glyphicon-download</li>
-						<li><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> glyphicon-trash</li>
-						<li><i class="glyphicon glyphicon-file" aria-hidden="true"></i> glyphicon-file</li>
-						<li><i class="glyphicon glyphicon-road" aria-hidden="true"></i> glyphicon-road</li>
-						<li><i class="glyphicon glyphicon-download-alt" aria-hidden="true"></i> glyphicon-download-alt</li>
-						<li><i class="glyphicon glyphicon-download" aria-hidden="true"></i> glyphicon-download</li>
-					</ul>
-					<div class="clearfix"> </div>
-				</div>					
-		    </div>				
-     </div>
+		    <script>
+	        $(function () {
+	          var map = new GMaps({
+	          el: "#map1",
+	          lat: 41.895465,
+	          lng: 12.482324,
+	          zoom: 5, 
+	          zoomControl : true,
+	          zoomControlOpt: {
+	            style : "SMALL",
+	            position: "TOP_LEFT"
+	          },
+	          panControl : true,
+	          streetViewControl : false,
+	          mapTypeControl: false,
+	          overviewMapControl: false
+	        });
+	        
+	        var styles = [
+	            {
+	              stylers: [
+	                { hue: "#00ffe6" },
+	                { saturation: -20 }
+	              ]
+	            }, {
+	                featureType: "road",
+	                elementType: "geometry",
+	                stylers: [
+	                    { lightness: 100 },
+	                    { visibility: "simplified" }
+	              ]
+	            }, {
+	                featureType: "road",
+	                elementType: "labels",
+	                stylers: [
+	                    { visibility: "off" }
+	              ]
+	            }
+	        ];
+	        
+	        map.addStyle({
+	            styledMapName:"Styled Map",
+	            styles: styles,
+	            mapTypeId: "map_style"  
+	        });
+	        
+	        map.setStyle("map_style");
+	      });
+	    </script>
+		
+			</div>
+	 		<div class="clearfix"> </div> 		
+		</div>
+	</div>
+ 	<!--//grid-->
+       </div>  	
+
 </div>
+<!--climate end here-->
+
 <!--inner block end here-->
 <!--copy rights start here-->
 <div class="copyrights">
@@ -380,8 +496,7 @@ $(".sidebar-icon").click(function() {
 <script src="js/bootstrap.js"> </script>
 <!-- mother grid end here-->
 </body>
-</html>
+</html>        
 
-
-                      
-						
+     
+                              

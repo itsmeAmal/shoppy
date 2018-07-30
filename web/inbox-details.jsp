@@ -1,12 +1,14 @@
-<!--Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE HTML>
+<%-- 
+    Document   : inbox-details
+    Created on : Jul 29, 2018, 8:37:37 PM
+    Author     : Amal
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Shoppy an Admin Panel Category Flat Bootstrap Responsive Website Template | Grids :: w3layouts</title>
+<title>Shoppy an Admin Panel Category Flat Bootstrap Responsive Website Template | Inbox-details :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -209,6 +211,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 				     <div class="clearfix"> </div>	
 				</div>
+	</div>
 <!--heder end here-->
 <!-- script-for sticky-nav -->
 		<script>
@@ -228,168 +231,59 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!-- /script-for sticky-nav -->
 <!--inner block start here-->
 <div class="inner-block">
-    <div class="cols-grids panel-widget">
-    	<h2>Grids</h2>
-		<div class="chute chute-center text-center">
-				<div class="row mb40">
-					<div class="col-md-12">
-						<div class="demo-grid">
-							<code>.col-md-12</code>
+    <div class="inbox">
+    	  <h2>Inbox Details</h2>
+    	 <div class="col-md-4 compose">   	 	
+    	 	<div class="mail-profile">
+    	 		<div class="mail-pic">
+    	 			<a href="#"><img src="images/b3.png" alt=""></a>
+    	 		</div>
+    	 		<div class="mailer-name"> 			
+    	 				<h5><a href="#">Malorum</a></h5>  	 				
+    	 			     <h6><a href="mailto:info@example.com">malorum@gmail.com</a></h6>   
+    	 		</div>
+    	 	    <div class="clearfix"> </div>
+    	 	</div>
+    	 	<div class="compose-bottom">
+    	 		<ul>
+    	 			<li><a class="hilate" href="#"><i class="fa fa-inbox"> </i>Inbox</a></li>
+    	 			<li><a href="#"><i class="fa fa-envelope-o"> </i>Sent Mail</a></li>
+    	 			<li><a href="#"><i class="fa fa-star-o"> </i>Important</a></li>
+    	 			<li><a href="#"><i class="fa fa-pencil-square-o"> </i>Drafts</a></li>
+    	 			<li><a href="#"><i class="fa fa-trash-o"> </i>Trash</a></li>
+    	 		</ul>
+    	 	</div>
+    	 </div>   	 
+    	 	<div class="col-md-8 compose-right">
+					<div class="inbox-details-default">
+						<div class="inbox-details-heading">
+							Compose New Message 
+						</div>
+						<div class="inbox-details-body">
+							<div class="alert alert-info">
+								Please fill details to send a new message
+							</div>
+							<form class="com-mail">
+								<input type="text"  value="To :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'To';}">
+								<input type="text"  value="Subject :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+								
+								<textarea rows="6"  value="Message :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message </textarea>
+								<div class="form-group">
+									<div class="btn btn-default btn-file">
+										<i class="fa fa-paperclip"> </i> Attachment
+										<input type="file" name="attachment">
+									</div>
+								</div>
+								<input type="submit" value="Send Message"> 
+							</form>
 						</div>
 					</div>
 				</div>
-				<div class="row mb40">
-					<div class="col-md-6">
-						<div class="demo-grid">
-							<code>.col-md-6</code>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="demo-grid">
-							<code>.col-md-6</code>
-						</div>
-					</div>
-				</div>
-				<div class="row mb40">
-					<div class="col-md-4">
-						<div class="demo-grid">
-							<code>.col-md-4</code>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="demo-grid">
-							<code>.col-md-4</code>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="demo-grid">
-							<code>.col-md-4</code>
-						</div>
-					</div>
-				</div>
-				<div class="row mb40">
-					<div class="col-md-3 mb5">
-						<div class="demo-grid">
-							<code>.col-md-3</code>
-						</div>
-					</div>
-					<div class="col-md-3 mb5">
-						<div class="demo-grid">
-							<code>.col-md-3</code>
-						</div>
-					</div>
-					<div class="col-md-3 mb5">
-						<div class="demo-grid">
-							<code>.col-md-3</code>
-						</div>
-					</div>
-					<div class="col-md-3 mb5">
-						<div class="demo-grid">
-							<code>.col-md-3</code>
-						</div>
-					</div>
-				</div>
-				<div class="row mb40">
-					<div class="col-md-2">
-						<div class="demo-grid">
-							<code>.col-md-2</code>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="demo-grid">
-							<code>.col-md-2</code>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="demo-grid">
-							<code>.col-md-2</code>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="demo-grid">
-							<code>.col-md-2</code>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="demo-grid">
-							<code>.col-md-2</code>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="demo-grid">
-							<code>.col-md-2</code>
-						</div>
-					</div>
-				</div>
-
-				<div class="row mb40">
-					<div class="col-md-8 mb5">
-						<div class="demo-grid">
-							<code>.col-md-8</code>
-						</div>
-					</div>
-					<div class="col-md-4 mb5">
-						<div class="demo-grid">
-							<code>.col-md-4</code>
-						</div>
-					</div>
-				</div>
-				<div class="row mb40">
-					<div class="col-md-3 mb5">
-						<div class="demo-grid">
-							<code>.col-md-3</code>
-						</div>
-					</div>
-					<div class="col-md-3 mb5">
-						<div class="demo-grid">
-							<code>.col-md-3</code>
-						</div>
-					</div>
-					<div class="col-md-6 mb5">
-						<div class="demo-grid">
-							<code>.col-md-6</code>
-						</div>
-					</div>
-				</div>
-				<div class="row mb40">
-					<div class="col-md-8 mb5">
-						<div class="demo-grid">
-							<code>.col-md-8</code>
-						</div>
-					</div>
-					<div class="col-md-4 mb5">
-						<div class="demo-grid">
-							<code>.col-md-4</code>
-						</div>
-					</div>
-
-				</div>
-				<div class="row mb40">
-					<div class="col-md-4">
-						<div class="demo-grid">
-							<code>.col-md-4</code>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="demo-grid">
-							<code>.col-md-2</code>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="demo-grid">
-							<code>.col-md-2</code>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="demo-grid">
-							<code>.col-md-4</code>
-						</div>
-					</div>
-				</div>
-		  </div>
-	 </div>	
+    	
+          <div class="clearfix"> </div>     
+   </div>
 </div>
-</div>
+
 <!--inner block end here-->
 <!--copy rights start here-->
 <div class="copyrights">
@@ -397,6 +291,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>	
 <!--COPY rights end here-->
 </div>
+
 <!--slider menu-->
     <div class="sidebar-menu">
 		  	<div class="logo"> <a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="#"> <span id="logo" ></span> 
@@ -480,4 +375,7 @@ $(".sidebar-icon").click(function() {
 </body>
 </html>
 
-              
+
+                      
+						
+

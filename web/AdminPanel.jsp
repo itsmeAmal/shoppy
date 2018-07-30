@@ -313,6 +313,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="market-update-block clr-block-1">
 					<div class="col-md-8 market-update-left">
 						<h3>83</h3>
+                                                
+                                                
+                                                
 						<h4>Registered User</h4>
 						<p>Other hand, we denounce</p>
 					</div>
