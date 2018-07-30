@@ -1,3 +1,11 @@
+<%-- 
+    Document   : signup
+    Created on : Jul 30, 2018, 9:42:02 PM
+    Author     : Amal
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <!--Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -76,3 +84,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                       
 						
+

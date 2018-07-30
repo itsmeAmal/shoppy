@@ -1,9 +1,11 @@
-<!--Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE HTML>
+<%-- 
+    Document   : typography
+    Created on : Jul 30, 2018, 9:44:19 PM
+    Author     : Amal
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
 <title>Shoppy an Admin Panel Category Flat Bootstrap Responsive Website Template | Typography :: w3layouts</title>
